@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.svg'
+import './App.css'
+import FindMovie from './FindMovie/FindMovie'
+import MovieInfo from './MovieInfo/MovieInfo'
+import Nav from './Nav/Nav'
+import { useState } from 'react'
 
 function App() {
+  const [movie, setMovie] = useState()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='App'>
+      <header className='App-header'>
+        <Nav stateChanger={setMovie}></Nav>
+        {movie && <MovieInfo movie={movie}></MovieInfo>}
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

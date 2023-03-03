@@ -1,0 +1,25 @@
+
+.TextField {
+    color: antiquewhite;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 1px solid antiquewhite;
+    width: 80%;
+    font-size: 1.4rem;
+    font-family: 'Tenor Sans',
+      sans-serif;
+    font-weight: 600;
+    padding-bottom: 0.1em;
+  }
+  .TextField.enabled {
+    box-sizing: border-box;
+    outline: white solid 2px;
+    outline-offset: -2px;
+  }
+  ::placeholder{
+    color: antiquewhite;
+  }
+  input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+  

@@ -1,0 +1,32 @@
+
+.poster {
+    width: 35%;
+    height: fit-content;
+}
+
+.container {
+    display: flex;
+    gap: 3em;
+    padding: 2em;
+}
+
+
+
+.logoProviderName{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6em;
+    padding-bottom: 2em;
+}
+.logoImg{
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+}
+
+.providers{
+    display: flex;
+    gap:1em;
+}

@@ -1,0 +1,7 @@
+.logo{color: antiquewhite;}
+
+.nav{display: flex;
+align-items: baseline;
+gap:1em;
+justify-content: space-between;}
+
